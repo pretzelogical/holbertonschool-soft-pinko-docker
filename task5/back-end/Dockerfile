@@ -8,5 +8,5 @@ RUN pip3 install flask
 RUN pip3 install flask-cors
 
 COPY ./api.py /app/api.py
-
+EXPOSE 5252
 CMD ["python3", "api.py"]
