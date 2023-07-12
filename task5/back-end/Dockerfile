@@ -7,5 +7,7 @@ RUN apt-get install python3 python3-pip -y
 RUN pip3 install flask
 RUN pip3 install flask-cors
 
+WORKDIR /app
 COPY ./api.py /app/api.py
+
 CMD ["python3", "api.py"]
